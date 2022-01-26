@@ -22,7 +22,7 @@ void run_command(char **argv) {
     }
     strcat(cmd, " ");
   }
-  system(cmd);
+  (void)!system(cmd);
 }
 
 int main(int argc, char **argv) {
